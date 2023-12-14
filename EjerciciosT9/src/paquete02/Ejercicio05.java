@@ -32,6 +32,9 @@ public class Ejercicio05 {
         while (bandera) {
             System.out.println("Ingrese una letra");
             inicial = entrada.nextLine().toUpperCase();
+            // utilizamos un swich para selecionar las iniciales de los nombres, 
+            //de esa manera salir del ciclo de no serlo , lo pedira hasta que
+            //salga del ciclo y bandera se haga falso 
             switch (inicial) {
                 case ("K"):
                 case ("H"):
@@ -44,7 +47,7 @@ public class Ejercicio05 {
                     break;
                 default:
             }
-
+            
         }
 
     }
