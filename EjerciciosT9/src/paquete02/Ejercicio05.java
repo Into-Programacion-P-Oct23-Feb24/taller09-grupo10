@@ -21,7 +21,7 @@ public class Ejercicio05 {
         Antes de analizar el presente ejercicio,
         usted debe revisar y entender lo desarrollado
         en el archivo Ayuda01.java del paquete2
-        */
+         */
         Scanner entrada = new Scanner(System.in);
         String[] estudiantes = {"Kimberly", "Hogan",
             "Teresa", "Luis", "Mark", "Jennifer",
@@ -31,10 +31,24 @@ public class Ejercicio05 {
         boolean bandera = true;
         while (bandera) {
             System.out.println("Ingrese una letra");
-            inicial = entrada.nextLine();
-            
+            inicial = entrada.nextLine().toUpperCase();
+            switch (inicial) {
+                case ("K"):
+                case ("H"):
+                case ("T"):
+                case ("L"):
+                case ("M"):
+                case ("J"):
+                case ("A"):
+                    bandera = false;
+                    break;
+                default:
+            }
+
         }
 
     }
 
 }
+
+
